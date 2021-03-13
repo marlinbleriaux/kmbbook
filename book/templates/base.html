@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> KMBsite {% block title%} Welcome {% endblock %} </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'  %}" >
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js">
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+ <body id= "{% block bodyId %} page genere {% endblock %}"> 
+    <header>
+    {% block headerContent %}<p class="header text-center"><img src="{% static 'img/im.png' %}" alt="My image" width="250px" higtht="200px"> </p>{% endblock %} 
+    </header>
+    <Section id="content"> 
+    {% block content %}{% endblock %} 
+    </section>
+ </body>  
+</html> 

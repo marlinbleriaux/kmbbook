@@ -1,0 +1,112 @@
+
+header {
+    position : absolute;
+    left: 0;
+    top: 0;
+    height : 80px;
+    width: 100%;
+    background:#3b5998   no-repeat 50px 25px;
+    border-bottom: 1px solid   #c5c5c5c5 ;
+}
+    
+body {
+    margin: 0;
+    padding: 0;
+    font-family : "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+    font-size: 11px;
+    color : #000333; 
+}
+.wrapper{ 
+    position: absolute; 
+    top : 200px; 
+    left: 50%; 
+    width : 500px; 
+    margin: 0 0 0 -250px; 
+    padding : 0;
+}
+form label { 
+   
+    display : block;
+    width : 150px;
+    float : left; 
+    text-align: right;
+    padding : 4px 10px 0 0; 
+}
+form input[type="email"] ,form input[type="text"],
+form input[type="password"]{
+    display : block;
+    width : 250px; 
+    padding : 2px;
+}
+form input[type="submit"] { 
+    margin: 0 20px 0 160px;
+    border-style : solid;
+    border-width : 1px;
+    border-color : #d9dfea #0e1f5b #0e1f5b #d9dfea;
+    background-color : #3b5998;
+    color : #FFFFFF;
+    padding : 2px 15px 3px 15px;
+    text-align : center ;
+}
+a { 
+    color : #3b5998;
+}
+body#loginPage section#content {
+    position: absolute ;
+    top: 150px;
+    left : 50%;
+    width : 500px;
+    margin: 0 0 0 -250px;
+    padding : 0;  
+}
+
+body section#content {
+    position : absolute;
+    top : 110px;
+    
+    left: 50%;
+    width :500px;
+    margin : 0 0 0 -250px;
+    padding : 0;
+}
+body#loginPage section#content {
+    top : 150px;
+}
+.cl {
+    
+    text-align : center;
+    font-size : 22px;
+    margin : 0px 60px 30px 60px;
+    padding : 0 0 5px 0;
+    color : #3b5998;
+    border-bottom : 1px solid #3b5998;
+    
+}
+body#welcomePage header {
+
+background: #3b5998  no-repeat 20px 25px;
+color : #FFFFFF;
+}
+body#welcomePage header p#name {
+font-size : 22px;
+margin: 20px 0 0 70px;
+}
+body#welcomePage header p#function {
+margin: 0 0 0 70px ;
+}
+body#welcomePage header p#profilelinks {
+position: absolute;
+right : 40px;
+top : 25px;
+}
+a.buttonlink {
+border-style: solid;
+border-width : lpx;
+
+border-color : #d9dfea #0e1f5b #0e1f5b #d9dfea;
+background-color : #3b5998 ;
+color : #FFFFFF;
+padding : 2px 15px 3px 15px;
+text-align: center;
+text-decoration: none;
+}

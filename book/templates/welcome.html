@@ -1,0 +1,25 @@
+{% extends "base.html" %} 
+{% block title %} Accueil {% endblock %}
+{% block bodyid %} welcomePage {% endblock %}
+{% block headercontent %}
+   <p>{{ logged_user.prenom }} {{ logged_user.nom }}, bienvenue  !</P>
+   <p id="function">  
+      {% if logged_user.type_personne == 'Student' %}
+        Etudiant en
+        {% if logged_user.annee == 1 %}
+           {{ logged_user.annee == 1 }}ère
+         {% else %}
+            {{ logged_user.annee == 1 }}ème
+         {% endif %}
+             {{ logged_user.cursus.intitule }}  
+      {% else %}
+         {{ logged_user.fonction | capfirst }}   
+          dans la faculté {{ logged_user.faculte }}
+      {% endif %} 
+   </p>
+   <p id="profilelinks">
+      <img src="{% static 'img/small.png' %}" alt="My image" width="250px" higtht="200px"> 
+      <a href="???" class="buttonlink">Voir le profil</a>
+      <a href="???" class="buttonlink">Modifier le profil</a>
+   </P>      
+{% endblock %}7

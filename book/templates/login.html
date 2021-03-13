@@ -1,0 +1,16 @@
+{% extends "base.html " %} 
+
+    {% block title %}Connexion{% endblock %} 
+    {% block bodyld %}loginPage{% endblock %} 
+    {% block content %}
+        <div class="wrapper">
+
+        <form action="login" method="post"> 
+            {{ form.as_p }}
+            <P>
+                <input type="submit" value="Se connecter" />
+                <a href="????">Créer un compte</a>
+            </P>
+        </form>
+    {% endblock %}
+          
